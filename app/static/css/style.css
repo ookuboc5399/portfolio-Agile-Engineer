@@ -1,0 +1,293 @@
+@charset "utf-8";
+
+body {
+    background: #F1F1F1;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+/* 四角背景　*/
+.splash .gradient-splash {
+    position: absolute;
+    width: 80%;
+    height: 55%;
+    left: 10%;
+    top: -5%;
+    background: -webkit-gradient(linear,left bottom,right top,color-stop(1%,#7be7d7),color-stop(40%,#7be7d7),color-stop(40%,#7be7d7),color-stop(100%,#86a4e3));
+    background: -webkit-linear-gradient(
+45deg
+,#7be7d7 1%,#7be7d7 40%,#7be7d7 40%,#86a4e3 100%);
+    background: -webkit-linear-gradient(
+45deg
+, #7be7d7 1%, #7be7d7 40%, #7be7d7 40%, #86a4e3 100%);
+    background: linear-gradient(
+45deg
+,#7be7d7 1%,#7be7d7 40%,#7be7d7 40%,#86a4e3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7be7d7', endColorstr='#86a4e3', GradientType=1);
+    opacity: 0;
+}
+
+/* Lookbook　*/
+.splash .baseline {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.splash .content-splash {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 45%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.splash .desktop-lookbook .sprite-lookbook {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -55px;
+}
+/* 21/22　*/
+.splash h4 {
+    position: relative;
+    margin: 0 auto;
+    top: -60px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 90px;
+    font-family: DidotItalic;
+    line-height: 1;
+    color: #70e4d0;
+    opacity: 0;
+}
+
+/*========= LoadingのためのCSS ===============*/
+
+/* Loading背景画面設定　*/
+
+#splash {
+    /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background:#333;
+  text-align:center;
+  color:#fff;
+}
+
+/*========= スクロールダウンのためのCSS ===============*/
+
+
+/*=== 9-1-4 矢印が動いてスクロールを促す  ====*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown4{
+    /*描画位置※位置は適宜調整してください*/
+  position:absolute;
+  bottom:1%;
+  right:50%;
+    /*矢印の動き1秒かけて永遠にループ*/
+  animation: arrowmove 1s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrowmove{
+      0%{bottom:1%;}
+      50%{bottom:3%;}
+     100%{bottom:1%;}
+ }
+
+/*Scrollテキストの描写*/
+.scrolldown4 span{
+    /*描画位置*/
+  position: absolute;
+  left:-20px;
+  bottom:10px;
+    /*テキストの形状*/
+  color: #eee;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown4:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 20px;
+    background: #eee;
+    transform: skewX(-31deg);
+}
+
+.scrolldown4:after{
+  content:"";
+    /*描画位置*/
+  position: absolute;
+  bottom:0;
+  right:0;
+    /*矢印の形状*/
+  width:1px;
+  height: 50px;
+  background:#eee;
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+h1{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  color:#eee;
+  text-shadow: 0 0 15px #666;
+  text-align: center;
+}
+
+#header{
+  width:100%;
+  height: 100vh;
+  position: relative;
+} 
+
+#header:before{
+  content: '';
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+  width:100%;
+  height: 100vh;
+  /*背景画像設定*/
+  background:url("https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-1-4/img/01.jpg") no-repeat center;
+  background-size:cover;
+}
+
+#container{
+  position: relative;
+  z-index:1;
+  background:#eee;
+  padding:600px 0;
+  text-align: center;
+}
+
+@media screen and (max-width:768px){
+
+    #header,
+    #header:before{
+  height: 90vh;    
+    }
+    
+}
+
+
+/*==================================================
+　5-2-4 MENUがCLOSEに
+===================================*/
+
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn4{
+    position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+    background:#D54884;
+    cursor: pointer;
+      width: 50px;
+      height:50px;
+    border-radius: 5px;
+  }
+  
+  /*ボタン内側*/
+  .openbtn4 span{
+      display: inline-block;
+      transition: all .4s;/*アニメーションの設定*/
+      position: absolute;
+      left: 14px;
+      height: 2px;
+      border-radius: 5px;
+    background: #fff;
+      width: 45%;
+    }
+  
+  
+  .openbtn4 span:nth-of-type(1) {
+    top:13px; 
+  }
+  
+  .openbtn4 span:nth-of-type(2) {
+    top:19px;
+  }
+  
+  .openbtn4 span:nth-of-type(3) {
+    top:25px;
+  }
+  
+  .openbtn4 span:nth-of-type(3)::after {
+    content:"Menu";/*3つ目の要素のafterにMenu表示を指定*/
+    position: absolute;
+    top:5px;
+    left:-2px;
+    color: #fff;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+  }
+  
+  /*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+  
+  .openbtn4.active span:nth-of-type(1) {
+      top: 14px;
+      left: 18px;
+      transform: translateY(6px) rotate(-45deg);
+      width: 30%;
+  }
+  
+  .openbtn4.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  
+  .openbtn4.active span:nth-of-type(3){
+      top: 26px;
+      left: 18px;
+      transform: translateY(-6px) rotate(45deg);
+      width: 30%;
+  }
+  
+  .openbtn4.active span:nth-of-type(3)::after {
+    content:"Close";/*3つ目の要素のafterにClose表示を指定*/
+      transform: translateY(0) rotate(-45deg);
+    top:5px;
+    left:4px;
+  }
+  /*========= レイアウトのためのCSS ===============*/
+  
+  body{
+    background:#f3f3f3;
+      padding:20px;
+  }
+  
+  
+  a{
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .lead{
+    margin:20px 0 0 0;
+  }
+  
+  .btn-block{
+    width:200px;  
+    padding: 30px;
+  }
+
+

@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>portfolio-Agile Engineer</title>
+</head>
+
+<body>
+    <div id="splash">
+        <div id="splash_text"></div>
+    </div>
+
+    <main>
+        <div id="container">
+
+        </div>
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+        </div>   
+    </main>
+
+    <footer class="py-2 bg-dark">
+        <p class="m-0 text-center text-white">Copyright &copy; ポートフォリオサイト</p>
+    </footer>
+
+    {% block extra_js %}
+    {% endblock %}
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <!--IE11用-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+    <!--自作のJS-->
+    <script src="{% static 'css/4-1-1.js' %}"></script>
+
+</body>
+
+</html>

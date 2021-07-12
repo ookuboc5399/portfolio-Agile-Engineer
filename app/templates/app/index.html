@@ -1,0 +1,193 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- <div class="w1000">
+    <div class="openbtn4"><span></span><span></span><span></span></div>
+    
+    <nav>
+        <ul>
+            <li>Django</li>
+            <li>Laravel</li>
+            <li>React</li>
+        </ul>  
+    </nav>
+    <div class="content">
+        <p>ここにコンテンツが入ります。</p>
+        <p>ここにコンテンツが入ります。</p>
+    </div>
+</div>
+
+<p>ローディング後、この画面が見えます。</p>
+<div class="">
+    <div class="">
+    </div>
+
+    <div class="scrolldown4"><span>Scroll</span></div>
+
+    <div class="">
+        <div class="card">
+ 
+        </div>
+    </div>
+</div> -->
+
+
+<div class="usual-nav" style="height: 19675px;"></div>
+
+
+
+<!-- <div class="wrapper-content">
+    <div class="shapes one" style="transform: translate(0%, 2.65723%) translate3d(0px, 0px, 0px); opacity: 1;">
+        <svg class="shape triangle big" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve" style="transform: translate(0%, -0.04%) matrix3d(-0.98481, 0.17364, 0, 0, -0.17364, -0.98481, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+            <polygon fill="none" stroke-width="1px" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" points="14.921,2.27 28.667,25.5 1.175,25.5 "></polygon>
+        </svg>
+        <div class="shape circle" style="transform: translate(0%, -0.04%) translate3d(0px, 0px, 0px);"></div>
+        <div class="shape diamond" style="transform: translate(0%, -0.04%) matrix3d(0.93969, -0.34201, 0, 0, 0.34201, 0.93969, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"></div>              
+        <svg class="shape waves" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve" style="transform: translate(0%, -0.04%) matrix3d(0.25881, 0.96592, 0, 0, -0.96592, 0.25881, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,23.651 c1.092,0,1.55-0.52,2.241-1.308c0.828-0.941,1.861-2.11,4.101-2.07c0.043-0.002,0.087-0.003,0.13-0.003 c2.163,0,3.171,1.148,3.985,2.073c0.692,0.788,1.149,1.308,2.241,1.308c0.054,0,0.106,0.006,0.157,0.013 c0.051-0.007,0.104-0.013,0.157-0.013c1.093,0,1.55-0.52,2.241-1.308c0.828-0.941,1.86-2.11,4.101-2.07 c0.044-0.002,0.087-0.003,0.129-0.003c2.163,0,3.173,1.148,3.986,2.073c0.691,0.788,1.148,1.308,2.241,1.308"></path>
+            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,16.684 c1.092,0,1.55-0.521,2.241-1.308c0.828-0.941,1.861-2.111,4.101-2.071c0.043,0,0.087-0.001,0.13-0.001 c2.163,0,3.171,1.148,3.985,2.072c0.692,0.788,1.149,1.308,2.241,1.308c0.054,0,0.106,0.005,0.157,0.012 c0.051-0.007,0.104-0.012,0.157-0.012c1.093,0,1.55-0.521,2.241-1.308c0.828-0.941,1.86-2.111,4.101-2.071 c0.044,0,0.087-0.001,0.129-0.001c2.163,0,3.173,1.148,3.986,2.072c0.691,0.788,1.148,1.308,2.241,1.308"></path>
+            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,9.714 c1.092,0,1.55-0.519,2.241-1.307c0.828-0.941,1.861-2.111,4.101-2.071c0.043-0.001,0.087-0.001,0.13-0.001 c2.163,0,3.171,1.147,3.985,2.072c0.692,0.788,1.149,1.307,2.241,1.307c0.054,0,0.106,0.006,0.157,0.014 c0.051-0.007,0.104-0.014,0.157-0.014c1.093,0,1.55-0.519,2.241-1.307c0.828-0.941,1.86-2.111,4.101-2.071 c0.044-0.001,0.087-0.001,0.129-0.001c2.163,0,3.173,1.147,3.986,2.072c0.691,0.788,1.148,1.307,2.241,1.307"></path>
+        </svg>
+        <svg class="shape hexa" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve" style="transform: translate(0%, -0.04%) matrix3d(0.93969, 0.34201, 0, 0, -0.34201, 0.93969, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+            <polygon fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" points="27.5,21.904 15,28.809  2.5,21.904 2.5,8.095 15,1.19 27.5,8.095 "></polygon>
+        </svg>
+        <svg class="shape triangle small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve" style="transform: translate(0%, -0.04%) matrix3d(-0.98481, -0.17364, 0, 0, 0.17364, -0.98481, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+            <polygon fill="none" stroke-width="1px" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" points="14.921,2.27 28.667,25.5 1.175,25.5 "></polygon>
+        </svg>
+        <div class="shape circle small" style="transform: translate(0%, -0.04%) matrix3d(0.90631, 0.42262, 0, 0, -0.42262, 0.90631, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"></div>
+        <svg class="shape waves small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve" style="transform: translate(0%, -0.04%) matrix3d(0.25881, 0.96592, 0, 0, -0.96592, 0.25881, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,23.651 c1.092,0,1.55-0.52,2.241-1.308c0.828-0.941,1.861-2.11,4.101-2.07c0.043-0.002,0.087-0.003,0.13-0.003 c2.163,0,3.171,1.148,3.985,2.073c0.692,0.788,1.149,1.308,2.241,1.308c0.054,0,0.106,0.006,0.157,0.013 c0.051-0.007,0.104-0.013,0.157-0.013c1.093,0,1.55-0.52,2.241-1.308c0.828-0.941,1.86-2.11,4.101-2.07 c0.044-0.002,0.087-0.003,0.129-0.003c2.163,0,3.173,1.148,3.986,2.073c0.691,0.788,1.148,1.308,2.241,1.308"></path>
+            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,16.684 c1.092,0,1.55-0.521,2.241-1.308c0.828-0.941,1.861-2.111,4.101-2.071c0.043,0,0.087-0.001,0.13-0.001 c2.163,0,3.171,1.148,3.985,2.072c0.692,0.788,1.149,1.308,2.241,1.308c0.054,0,0.106,0.005,0.157,0.012 c0.051-0.007,0.104-0.012,0.157-0.012c1.093,0,1.55-0.521,2.241-1.308c0.828-0.941,1.86-2.111,4.101-2.071 c0.044,0,0.087-0.001,0.129-0.001c2.163,0,3.173,1.148,3.986,2.072c0.691,0.788,1.148,1.308,2.241,1.308"></path>
+            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,9.714 c1.092,0,1.55-0.519,2.241-1.307c0.828-0.941,1.861-2.111,4.101-2.071c0.043-0.001,0.087-0.001,0.13-0.001 c2.163,0,3.171,1.147,3.985,2.072c0.692,0.788,1.149,1.307,2.241,1.307c0.054,0,0.106,0.006,0.157,0.014 c0.051-0.007,0.104-0.014,0.157-0.014c1.093,0,1.55-0.519,2.241-1.307c0.828-0.941,1.86-2.111,4.101-2.071 c0.044-0.001,0.087-0.001,0.129-0.001c2.163,0,3.173,1.147,3.986,2.072c0.691,0.788,1.148,1.307,2.241,1.307"></path>
+        </svg>
+    </div>
+    <div class="shapes two" style="transform: translate(0%, 2.65723%) translate3d(0px, 0px, 0px); opacity: 1;">
+        <div class="rotate-area">
+            <div class="shape circle" style="transform: translate(0%, -0.04%) translate3d(0px, 0px, 0px);"></div>
+            <div class="shape diamond" style="transform: translate(0%, -0.04%) matrix3d(0.93969, -0.34201, 0, 0, 0.34201, 0.93969, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"></div>                  
+            <svg class="shape waves" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve" style="transform: translate(0%, -0.04%) matrix3d(0.25881, 0.96592, 0, 0, -0.96592, 0.25881, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,23.651 c1.092,0,1.55-0.52,2.241-1.308c0.828-0.941,1.861-2.11,4.101-2.07c0.043-0.002,0.087-0.003,0.13-0.003 c2.163,0,3.171,1.148,3.985,2.073c0.692,0.788,1.149,1.308,2.241,1.308c0.054,0,0.106,0.006,0.157,0.013 c0.051-0.007,0.104-0.013,0.157-0.013c1.093,0,1.55-0.52,2.241-1.308c0.828-0.941,1.86-2.11,4.101-2.07 c0.044-0.002,0.087-0.003,0.129-0.003c2.163,0,3.173,1.148,3.986,2.073c0.691,0.788,1.148,1.308,2.241,1.308"></path>
+                <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,16.684 c1.092,0,1.55-0.521,2.241-1.308c0.828-0.941,1.861-2.111,4.101-2.071c0.043,0,0.087-0.001,0.13-0.001 c2.163,0,3.171,1.148,3.985,2.072c0.692,0.788,1.149,1.308,2.241,1.308c0.054,0,0.106,0.005,0.157,0.012 c0.051-0.007,0.104-0.012,0.157-0.012c1.093,0,1.55-0.521,2.241-1.308c0.828-0.941,1.86-2.111,4.101-2.071 c0.044,0,0.087-0.001,0.129-0.001c2.163,0,3.173,1.148,3.986,2.072c0.691,0.788,1.148,1.308,2.241,1.308"></path>
+                <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,9.714 c1.092,0,1.55-0.519,2.241-1.307c0.828-0.941,1.861-2.111,4.101-2.071c0.043-0.001,0.087-0.001,0.13-0.001 c2.163,0,3.171,1.147,3.985,2.072c0.692,0.788,1.149,1.307,2.241,1.307c0.054,0,0.106,0.006,0.157,0.014 c0.051-0.007,0.104-0.014,0.157-0.014c1.093,0,1.55-0.519,2.241-1.307c0.828-0.941,1.86-2.111,4.101-2.071 c0.044-0.001,0.087-0.001,0.129-0.001c2.163,0,3.173,1.147,3.986,2.072c0.691,0.788,1.148,1.307,2.241,1.307"></path>
+            </svg>
+            <svg class="shape waves small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve" style="transform: translate(0%, -0.04%) matrix3d(0.25881, 0.96592, 0, 0, -0.96592, 0.25881, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,23.651 c1.092,0,1.55-0.52,2.241-1.308c0.828-0.941,1.861-2.11,4.101-2.07c0.043-0.002,0.087-0.003,0.13-0.003 c2.163,0,3.171,1.148,3.985,2.073c0.692,0.788,1.149,1.308,2.241,1.308c0.054,0,0.106,0.006,0.157,0.013 c0.051-0.007,0.104-0.013,0.157-0.013c1.093,0,1.55-0.52,2.241-1.308c0.828-0.941,1.86-2.11,4.101-2.07 c0.044-0.002,0.087-0.003,0.129-0.003c2.163,0,3.173,1.148,3.986,2.073c0.691,0.788,1.148,1.308,2.241,1.308"></path>
+                <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,16.684 c1.092,0,1.55-0.521,2.241-1.308c0.828-0.941,1.861-2.111,4.101-2.071c0.043,0,0.087-0.001,0.13-0.001 c2.163,0,3.171,1.148,3.985,2.072c0.692,0.788,1.149,1.308,2.241,1.308c0.054,0,0.106,0.005,0.157,0.012 c0.051-0.007,0.104-0.012,0.157-0.012c1.093,0,1.55-0.521,2.241-1.308c0.828-0.941,1.86-2.111,4.101-2.071 c0.044,0,0.087-0.001,0.129-0.001c2.163,0,3.173,1.148,3.986,2.072c0.691,0.788,1.148,1.308,2.241,1.308"></path>
+                <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M2.145,9.714 c1.092,0,1.55-0.519,2.241-1.307c0.828-0.941,1.861-2.111,4.101-2.071c0.043-0.001,0.087-0.001,0.13-0.001 c2.163,0,3.171,1.147,3.985,2.072c0.692,0.788,1.149,1.307,2.241,1.307c0.054,0,0.106,0.006,0.157,0.014 c0.051-0.007,0.104-0.014,0.157-0.014c1.093,0,1.55-0.519,2.241-1.307c0.828-0.941,1.86-2.111,4.101-2.071 c0.044-0.001,0.087-0.001,0.129-0.001c2.163,0,3.173,1.147,3.986,2.072c0.691,0.788,1.148,1.307,2.241,1.307"></path>
+            </svg>
+        </div>
+    </div> -->
+
+    <section class="" style="transform: translate(0%, -0.04%) translate3d(0px, 0px, 0px);">
+        <div class="gradient-splash green" style="opacity: 1;"></div>
+
+        <div class="content-splash" style="transform: translate(0%, 0.05%) translate3d(0px, -255px, 0px);">
+            <div class="baseline">
+                <div class="desktop-lookbook">
+                    <div class="sprite-lookbook">
+                        <img width="1614" height="16800" src="" style="transform: translate3d(-807px, -16400px, 0px);">
+                    </div>
+                </div>
+                <!-- <div class="mobile-portfolio">
+                    <h3>
+                        <span class="">portfolio</span>
+                </div> -->
+                <h4 style="opacity: 1;">21/22</h4>
+            </div>
+        </div>
+    </section>
+    
+    <!-- <section class="content-wrapper slipper six" style="transform: translate(0%, -0.04%) translate3d(0px, 0px, 0px);">
+        <div class="content-slipper">
+            <div class="gradient blue"></div>
+            <img class="slipper-object" src="{% static 'images/python_agile.png' %}" style="transform: translate(0%, -124.95%) translate3d(0px, 0px, 0px);">
+
+            <div class="description-slipper">
+                <span>like</span>
+                <h2>Celeste</h2>
+                <p>Celeste, an evident encounter between the.</p>
+                
+                <a href="" target="_blank" class="link-shop" data-color="#6eaccd">
+                    <div class="overlay-color"></div>
+                    <span>S</span>
+                    <span>h</span>
+                    <span>o</span>
+                    <span>p</span>
+                </a>
+            </div>
+        </div>
+        <span class="letter" style="transform: translate(0%, 50%) translate3d(0px, -189px, 0px);">
+            <img class="sprite-letter" width="1716" height="4158" src="" style="transform: translate3d(0px, 0px, 0px);">
+            <span>D</span>
+        </span>
+    </section>
+    
+    <div class="sound on" style="opacity: 1;">
+        <img class="sound-on" onerror="this.src = this.src.replace(/svg/g,'png')" src="">
+        <img class="sound-off" onerror="this.src = this.src.replace(/svg/g,'png')" src="">
+    </div>
+
+    <section class="menu" style="opacity: 0;">
+        <div class="gradient-menu"></div>
+        <div class="half-screen">
+            <div class="left">
+                <a href="#" style="">
+                    <span class="text-link">Design</span>
+                    <span class="line-link"></span>
+                </a>
+            </div>
+            <div class="right">
+                <a target="_blank" href="" style="">
+                    <span class="text-link">Store</span>
+                    <span class="line-link"></span>
+                </a>
+            </div>
+        </div>
+        <div class="wrapper-menu">
+            <img class="logo-menu" onerror="this.src = this.src.replace(/svg/g,'png')" src="" style="opacity: 0;">
+
+            <span class="slipper-link" style="">
+                <span class="text-link">Django<span class="line-link"></span></span>
+            </span>
+            <span class="slipper-link" style="">
+                <span class="text-link">Laravel<span class="line-link"></span></span>
+            </span>
+            <span class="slipper-link" style="">
+                <span class="text-link">Python<span class="line-link"></span></span>
+            </span>
+        </div>
+    </section>
+    <a href="#" class="nav-menu active" style="opacity: 1;">
+        <span class="wrapper-letters">
+            <span style="transform: matrix(1, 0, 0, 1, 0, 0);">m</span>
+            <span style="transform: matrix(1, 0, 0, 1, 0, 0);">e</span>
+            <span style="transform: matrix(1, 0, 0, 1, 0, 0);">n</span>
+            <span style="transform: matrix(1, 0, 0, 1, 0, 0);">u</span>
+        </span>
+        <div class="line-menu" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+        <div class="line-menu-hover"></div>
+    </a>
+</div>
+<div class="logo-wrapper" style="transform: translate(0%, 369.96%) translate3d(0px, 0px, 0px); opacity: 1;">
+    <div class="logo show">
+        <img class="logo-img" src="">
+        <img class="logo-text" src="">
+    </div>
+
+    <div class="scroll" style="opacity: 1;">
+        <span class="scroll-text" style="opacity: 1;">scroll</span>
+        <div class="line-wrapper">
+            <div class="line" style="transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);"></div>
+        </div>
+    </div>
+</div>
+
+<audio class="loop-audio" loop="loop" preload="none">
+<source src="" type="audio/mpeg; codecs=&quot;mp3&quot;">
+<source src="" type="audio/ogg; codecs=&quot;vorbis&quot;">
+</audio> -->
+
+
+
+{% endblock %}
