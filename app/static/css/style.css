@@ -2,83 +2,240 @@
 
 body {
     background: #F1F1F1;
-    display: flex;
-    flex-flow: column;
-    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
+
+.wrapper-content {
+  display: block;
+  /* position: fixed; */
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+
 /* 四角背景　*/
+
+.splash {
+  position:fixed; 
+  width: 100%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  text-align: center;
+} 
+
 .splash .gradient-splash {
-    position: absolute;
-    width: 80%;
-    height: 55%;
-    left: 10%;
-    top: -5%;
-    background: -webkit-gradient(linear,left bottom,right top,color-stop(1%,#7be7d7),color-stop(40%,#7be7d7),color-stop(40%,#7be7d7),color-stop(100%,#86a4e3));
-    background: -webkit-linear-gradient(
+  display: block;
+  position: absolute;
+  width: 80%;
+  height: 55%;
+  left: 10%;
+  top: -5%;
+  background: -webkit-gradient(linear,left bottom,right top,color-stop(1%,#7be7d7),color-stop(40%,#7be7d7),color-stop(40%,#7be7d7),color-stop(100%,#86a4e3));
+  background: -webkit-linear-gradient(
 45deg
 ,#7be7d7 1%,#7be7d7 40%,#7be7d7 40%,#86a4e3 100%);
-    background: -webkit-linear-gradient(
+  background: -webkit-linear-gradient(
 45deg
 , #7be7d7 1%, #7be7d7 40%, #7be7d7 40%, #86a4e3 100%);
-    background: linear-gradient(
+  background: linear-gradient(
 45deg
 ,#7be7d7 1%,#7be7d7 40%,#7be7d7 40%,#86a4e3 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7be7d7', endColorstr='#86a4e3', GradientType=1);
-    opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7be7d7', endColorstr='#86a4e3', GradientType=1);
+  opacity: 0;
 }
 
 /* Lookbook　*/
 .splash .baseline {
-    position: relative;
-    width: 100%;
-    text-align: center;
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
 }
 
 .splash .content-splash {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 45%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .splash .desktop-lookbook .sprite-lookbook {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -55px;
-}
-/* 21/22　*/
-.splash h4 {
-    position: relative;
-    margin: 0 auto;
-    top: -60px;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 90px;
-    font-family: DidotItalic;
-    line-height: 1;
-    color: #70e4d0;
-    opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -55px;
 }
 
+.h3 {
+  margin: 0;
+  display: block;
+  font-size: 180px;
+  font-family: DidotItalic;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+/* 21/22　*/
+.splash .baseline .year {
+  position: relative;
+  margin: 0 auto; 
+  top: -60px;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 400;
+  font-family: DidotItalic;
+  line-height: 2;
+  color: #70e4d0;
+  /* opacity: 0; */
+  display: block;
+}
+
+/* Djangoセクション　*/
+.content-wrapper-django {
+  display: block;
+  position:fixed; 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+} 
+
+.content-wrapper-django .content-slipper  {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.content-wrapper-django .content-slipper .gradient-red {
+  display: block;
+  right: 0;
+  position: absolute;
+  width: 48%;
+  height: 75%;
+  top: 5%;
+  right: 5%;
+  background: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#ff4f58),color-stop(57%,#ff4f58),color-stop(100%,#fd7048));
+  background: -webkit-linear-gradient(
+45deg
+,#ff4f58 0,#ff4f58 57%,#fd7048 100%);
+  background: -webkit-linear-gradient(
+45deg
+, #ff4f58 0, #ff4f58 57%, #fd7048 100%);
+  background: linear-gradient(
+45deg
+,#ff4f58 0,#ff4f58 57%,#fd7048 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4f58', endColorstr='#fd7048', GradientType=1);
+}
+
+
+.content-wrapper-django .content-slipper .Django>span {
+  display: inline-block;
+  margin: 0 0 15px;
+  font-size: 26px;
+  font-family: DidotItalic;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.content-wrapper-django .content-slipper .Django h2 {
+  color: #ff4f58;
+  font-size: 70px;
+  font-family: DidotItalic;
+}
+
+
+.content-wrapper-django .content-slipper .Django p {
+  margin: 5% 0 0;
+  font-size: 14px;
+  font-family: AvenirRegular;
+  line-height: 1.8;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/* .content-wrapper-django .content-slipper .Django .link-shop .overlay-color{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  border-radius: 25px;
+} */
+
+.content-wrapper-django .content-slipper .Django .link-shop{
+  color: #ff4f59;
+}
+
+.content-wrapper-django .letter {
+  position: absolute;
+  width: 428px;
+  height: 378px;
+  top: 50%;
+  left: 48%;
+  margin: 0 0 0 229px;
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.content-wrapper-django .letter>span{
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 300px;
+  font-family: DidotItalic;
+  color: #1e1a1a;
+
+}
 /*========= LoadingのためのCSS ===============*/
 
 /* Loading背景画面設定　*/
 
-#splash {
+/* #splash {
     /*fixedで全面に固定*/
-  position: fixed;
+  /* position: fixed;
   z-index: 999;
   width: 100%;
-  height: 100%;
-  background:#333;
+  /* background: #333; */
+  /* height: 100%;
   text-align:center;
-  color:#fff;
-}
+  color:#fff; */
+} */ */
 
 /*========= スクロールダウンのためのCSS ===============*/
 
@@ -199,11 +356,12 @@ h1{
 
 /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
 .openbtn4{
-    position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+    right: 3%;
+    position: fixed;/*ボタン内側の基点となるためrelativeを指定*/
     background:#D54884;
     cursor: pointer;
-      width: 50px;
-      height:50px;
+    width: 50px;
+    height:50px;
     border-radius: 5px;
   }
   
@@ -290,4 +448,44 @@ h1{
     padding: 30px;
   }
 
+  /*========= フッター ===============*/
+  .footer .gradient-footer {
+    display: flex;
+    /* width: 80%;
+    height: 55%;
+    left: 10%;
+    top: 45%; */
+    background: -webkit-gradient(linear,left bottom,right top,color-stop(1%,#7be7d7),color-stop(40%,#7be7d7),color-stop(40%,#7be7d7),color-stop(100%,#86a4e3));
+    background: -webkit-linear-gradient(
+45deg
+,#7be7d7 1%,#7be7d7 40%,#7be7d7 40%,#86a4e3 100%);
+    background: -webkit-linear-gradient(
+45deg
+, #7be7d7 1%, #7be7d7 40%, #7be7d7 40%, #86a4e3 100%);
+    background: linear-gradient(
+45deg
+,#7be7d7 1%,#7be7d7 40%,#7be7d7 40%,#86a4e3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7be7d7', endColorstr='#86a4e3', GradientType=1);
+}
+    /*========= サウンド ===============*/
+    .sound {
+      position: fixed;
+      left: 5%;
+      top: 20px;
+      width: 20px;
+      margin: 0 0 0 -10px;
+      cursor: pointer;
+      text-align: center;
+      opacity: 0;
+  }
+    .fa-volume { 
+      position: relative;
+      display: block;
+      top: 3px;
+      font-size:1.5em;
+  }
 
+    .fa-volume-off { 
+      display: none;
+      font-size:1.5em;
+  }

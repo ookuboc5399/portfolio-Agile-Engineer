@@ -30,3 +30,17 @@ var bar = new ProgressBar.Line(splash_text, {//id名を指定
   $(".openbtn4").click(function () {
     $(this).toggleClass('active');
 });
+  $(function(){
+    $("nav").hide();
+});
+
+  //サウンド
+  $('.fas').click(function(){
+      // ハンバーガーアイコンを管理
+      $('.fa-volume').hide();
+      $('.fa-volume-off').show();
+　}else {
+      // ハンバーガーアイコンを管理
+      $('.fa-volume-off').hide();
+      $('.fa-volume').show();
+});

@@ -6,8 +6,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+
     <title>portfolio-Agile Engineer</title>
 </head>
 
@@ -17,18 +20,15 @@
     </div>
 
     <main>
-        <div id="container">
+        <!-- <div id="container">
 
-        </div>
+        </div> -->
         <div class="container">
             {% block content %}
             {% endblock %}
         </div>   
     </main>
 
-    <footer class="py-2 bg-dark">
-        <p class="m-0 text-center text-white">Copyright &copy; ポートフォリオサイト</p>
-    </footer>
 
     {% block extra_js %}
     {% endblock %}

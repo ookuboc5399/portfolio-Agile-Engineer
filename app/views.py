@@ -8,3 +8,9 @@ class IndexView(View):
         return render(request, 'app/index.html', {
 
         })
+
+class ShopView(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'app/shop.html', {
+
+        })

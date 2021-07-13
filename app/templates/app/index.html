@@ -2,21 +2,19 @@
 {% load static %}
 {% block content %}
 
-<!-- <div class="w1000">
+
+<div class="w1000">
     <div class="openbtn4"><span></span><span></span><span></span></div>
     
-    <nav>
+    <nav class=> 
         <ul>
             <li>Django</li>
             <li>Laravel</li>
             <li>React</li>
         </ul>  
     </nav>
-    <div class="content">
-        <p>ここにコンテンツが入ります。</p>
-        <p>ここにコンテンツが入ります。</p>
-    </div>
 </div>
+<!-- 
 
 <p>ローディング後、この画面が見えます。</p>
 <div class="">
@@ -33,11 +31,11 @@
 </div> -->
 
 
-<div class="usual-nav" style="height: 19675px;"></div>
+<div class="usual-nav" style="height: 5000px;"></div>
 
 
-
-<!-- <div class="wrapper-content">
+<div class="wrapper-content">
+<!-- 
     <div class="shapes one" style="transform: translate(0%, 2.65723%) translate3d(0px, 0px, 0px); opacity: 1;">
         <svg class="shape triangle big" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve" style="transform: translate(0%, -0.04%) matrix3d(-0.98481, 0.17364, 0, 0, -0.17364, -0.98481, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
             <polygon fill="none" stroke-width="1px" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" points="14.921,2.27 28.667,25.5 1.175,25.5 "></polygon>
@@ -79,54 +77,45 @@
         </div>
     </div> -->
 
-    <section class="" style="transform: translate(0%, -0.04%) translate3d(0px, 0px, 0px);">
+    <section class="splash" style="">
         <div class="gradient-splash green" style="opacity: 1;"></div>
 
-        <div class="content-splash" style="transform: translate(0%, 0.05%) translate3d(0px, -255px, 0px);">
+        <div class="content-splash" style="">
             <div class="baseline">
-                <div class="desktop-lookbook">
-                    <div class="sprite-lookbook">
-                        <img width="1614" height="16800" src="" style="transform: translate3d(-807px, -16400px, 0px);">
-                    </div>
-                </div>
+                <span class="h3">portfolio</span>
                 <!-- <div class="mobile-portfolio">
                     <h3>
                         <span class="">portfolio</span>
                 </div> -->
-                <h4 style="opacity: 1;">21/22</h4>
+                <div class="year" style="height: 300px;">
+                    21/22
+                </div>
             </div>
         </div>
     </section>
     
-    <!-- <section class="content-wrapper slipper six" style="transform: translate(0%, -0.04%) translate3d(0px, 0px, 0px);">
+    <section class="content-wrapper-django" style="transform: translate(0%,0%) translate3d(0px,0px,0px);">
         <div class="content-slipper">
-            <div class="gradient blue"></div>
-            <img class="slipper-object" src="{% static 'images/python_agile.png' %}" style="transform: translate(0%, -124.95%) translate3d(0px, 0px, 0px);">
+            <div class="gradient-red"></div>
+            <!-- <img class="gradient-red" src="{% static 'images/python_agile.png' %}" style=""> -->
 
-            <div class="description-slipper">
+            <div class="Django">
                 <span>like</span>
-                <h2>Celeste</h2>
+                <h2>Django</h2>
                 <p>Celeste, an evident encounter between the.</p>
                 
                 <a href="" target="_blank" class="link-shop" data-color="#6eaccd">
                     <div class="overlay-color"></div>
-                    <span>S</span>
-                    <span>h</span>
-                    <span>o</span>
-                    <span>p</span>
+                    <span class="" href="{% url 'shop' %}">Shop</span>
                 </a>
             </div>
         </div>
-        <span class="letter" style="transform: translate(0%, 50%) translate3d(0px, -189px, 0px);">
-            <img class="sprite-letter" width="1716" height="4158" src="" style="transform: translate3d(0px, 0px, 0px);">
+        <span class="letter" style="">
+            <!-- <img class="sprite-letter" width="1716" height="4158" src="" style="transform: translate3d(0px, 0px, 0px);"> -->
             <span>D</span>
         </span>
     </section>
-    
-    <div class="sound on" style="opacity: 1;">
-        <img class="sound-on" onerror="this.src = this.src.replace(/svg/g,'png')" src="">
-        <img class="sound-off" onerror="this.src = this.src.replace(/svg/g,'png')" src="">
-    </div>
+    <!-- 
 
     <section class="menu" style="opacity: 0;">
         <div class="gradient-menu"></div>
@@ -174,20 +163,41 @@
         <img class="logo-img" src="">
         <img class="logo-text" src="">
     </div>
+ -->
 
-    <div class="scroll" style="opacity: 1;">
-        <span class="scroll-text" style="opacity: 1;">scroll</span>
-        <div class="line-wrapper">
-            <div class="line" style="transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);"></div>
+    <section class="footer">
+        <div class="gradient-footer" style="transform: translate(0%, 1.04%) translate3d(0px, 0px, 0px);"></div>
+        <div class="wrapper-footer">
+            <div class="footer-shop">
+                <h2>Shop</h2>
+                <p>How can you resist? Succumb to these unique and original slippers. They will make you unique as well!</p>
+            </div>
         </div>
+        <div class="credits">
+            Portfolio  ©  Copyright 2020/2021  |  
+        </div>
+    </section>
+
+</div>
+
+<div class="scroll hide" style="opacity: 1;">
+    <span class="scroll-text" style="opacity: 1;">scroll</span>
+    <div class="line-wrapper">
+        <div class="line" style="transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);"></div>
     </div>
 </div>
 
+
+<div class="sound on" style="opacity: 1;">
+    <ul>
+        <li><i class="fas fa-volume"></i></li>
+        <li><i class="fas fa-volume-off"></i></li>
+    </ul>
+</div>
+
 <audio class="loop-audio" loop="loop" preload="none">
-<source src="" type="audio/mpeg; codecs=&quot;mp3&quot;">
-<source src="" type="audio/ogg; codecs=&quot;vorbis&quot;">
-</audio> -->
-
-
+    <source src="{% static 'sounds/sound-board_sounds_applause.mp3' %}" type="audio/mpeg; codecs=&quot;mp3&quot;">
+    <source src="{% static 'sounds/sound-board_sounds_applause.mp3' %}" type="audio/ogg; codecs=&quot;vorbis&quot;">
+</audio>
 
 {% endblock %}
